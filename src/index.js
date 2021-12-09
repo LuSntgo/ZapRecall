@@ -1,13 +1,8 @@
-import ReactDOM from "react-dom";
+import ReactDOM  from "react-dom";
+import App from "./App";
 
 
-function App (){
-    return "VAmo a la playa"
-}
-
-
-
-
-
-const root = document.querySelector('.root');
+const root = document.querySelector(".root");
 ReactDOM.render(<App />, root);
+
+
