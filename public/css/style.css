@@ -14,47 +14,6 @@ body {
   width: 171.44px;
   height: 217.98px;
 }
-.main {
-  width: 100%;
-  height: 100%;
-}
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.logo {
-  margin-top: 200px;
-}
-.startCard {
-  width: 345px;
-  height: 72px;
-  display: inline-block;
-  padding: 24px 65px;
-  border: 3px solid #ffef61;
-  margin-top: 250px;
-  border-radius: 12px;
-
-  background-color: #ffffff;
-  background-image: url(/assets/next.png), url(/assets/next.png);
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: 75% 55%;
-
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-  transition: all 0.2s;
-}
-.startCard:hover {
-  color: #000000;
-  background-color: #fff7b1;
-}
-
 .hide {
   display: none;
 }
@@ -72,10 +31,6 @@ body {
   height: 576px;
 
   background-color: white;
-  background-image: url(/assets/turn.png);
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: 97% 97%;
 
   border-radius: 12px;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
@@ -86,26 +41,16 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 33px;
-  text-align: center;
-  padding: 0 50px;
-}
-.counter {
+
+.turn {
   position: absolute;
   right: 15px;
-  top: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
 }
+
 .logo-mini {
   position: sticky;
 }

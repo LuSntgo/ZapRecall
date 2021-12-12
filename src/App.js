@@ -1,15 +1,14 @@
-//import Header from "./components/Header";
-//import Body from "./components/Body";
-import MainPage from "./components/MainPage"
-import Content from "./components/Content"
+import MainPage from "./components/MainPage/MainPage";
+import FlashCard from "./components/FlashCardPage/FlashCard";
+import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 
-
-export default function App (){
-    return (
-        <>
-       <MainPage />
-        <Content />
-       </>
-       )
+export default function App() {
+  return (
+    <Router>
+      <Switch>
+      <Route exact path="/" element={<MainPage />} />
+      <Route exact path="/card" element={<FlashCard />} />
+      </Switch>
+    </Router>
+  );
 }
-

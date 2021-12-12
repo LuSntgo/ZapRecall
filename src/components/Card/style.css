@@ -1,0 +1,204 @@
+.card {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  height: 575px;
+}
+.title {
+  height: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 50px;
+}
+.title-mini {
+  padding-top: 20px;
+  height: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  display: flex;
+  justify-content: center;
+}
+.counter {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  z-index: 30;
+}
+.front-card {
+  width: 392px;
+  height: 576px;
+
+  background-color: white;
+
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.back-card {
+  width: 392px;
+  height: 576px;
+
+  background-color: white;
+
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.answer {
+  height: 100%;
+  padding: 0 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.hide {
+  display: none;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.black {
+  width: 65px;
+  height: 48px;
+  display: inline-block;
+  padding: 14px;
+  border: 3px solid #000000;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.black:hover {
+  color: #000000;
+  background-color: #cacaca;
+}
+.red {
+  width: 65px;
+  height: 48px;
+  display: inline-block;
+  padding: 14px;
+  border: 3px solid red;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.red:hover {
+  color: #000000;
+  background-color: #ff8181;
+}
+.green {
+  width: 65px;
+  height: 48px;
+  display: inline-block;
+  padding: 14px;
+  border: 3px solid green;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.green:hover {
+  color: #000000;
+  background-color: #c9ffa4;
+}
+.yellow {
+  width: 65px;
+  height: 48px;
+  display: inline-block;
+  padding: 14px;
+  border: 3px solid yellow;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.yellow:hover {
+  color: #000000;
+  background-color: #fffbbc;
+}
