@@ -1,12 +1,18 @@
 import './style.css';
+import sad from "../../assets/sad.png";
 
-export default Fail() {
+export default function Fail() {
     return (
         <>
-        <div class="back-card">
-        <p class="counter">{cardCounter +1}/8</p>
-        <h1 class="title-mini">{question}</h1>
-        <h3 class="answer">{answer}</h3>
+        <div class="center">
+        <div class="failPage">
+        <h1 class="title-Fail">Putz..
+        <img class="sad" src={sad}></img>
+        </h1>
+        <p class="textFail">Você esqueceu alguns flashcards... 
+        <br />
+        Não desanime! Na próxima você consegue!</p>
+        </div>
         </div>
         </>
 
