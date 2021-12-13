@@ -7,12 +7,8 @@ body {
   color: #262626;
   font-weight: 400;
   font-size: 14px;
-  background-color: violet;
-}
-
-.logo {
-  width: 171.44px;
-  height: 217.98px;
+  background: rgb(255,165,254);
+  background: linear-gradient(90deg, rgba(255,165,254,1) 0%, rgba(212,155,255,1) 65%, rgba(255,246,105,1) 100%);
 }
 .hide {
   display: none;

@@ -1,23 +1,21 @@
 .flashcard {
-    width: 100%;
-    height: 800px;
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  
-  .turn {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    width: 40px;
-    height: 40px;
-  
-  }
-  
-  .logo-mini {
-    position: sticky;
-  }
+.turn {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-mini {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+}
