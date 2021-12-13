@@ -9,7 +9,7 @@ export default function MainPage() {
       <div class="center">
         <img class="logo" src={logo} alt="logo" />
         <Link to="/card">
-        <button class="startCard">
+        <button data-identifier="start-zap-recall" class="startCard">
           {" "}
           Praticar React{" "}
         </button>

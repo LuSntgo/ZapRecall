@@ -40,19 +40,19 @@ export default function Card(props) {
   return (
     <>
       {isFront ? (
-        <div class="front-card">
-          <p class="counter">{cardCounter + 1}/8</p>
+        <div data-identifier="flashcard" class="front-card">
+          <p data-identifier="counter" class="counter">{cardCounter + 1}/8</p>
           <h1 class="title">{question}</h1>
-          <img class="turn" src={turn} onClick={() => Flip()} alt="turn" />
+          <img ata-identifier="arrow" class="turn" src={turn} onClick={() => Flip()} alt="turn" />
         </div>
       ) : (
         <div className={style}>
-          <div class="back-card">
-            <p class="counter">{cardCounter + 1}/8</p>
+          <div data-identifier="flashcard" class="back-card">
+            <p data-identifier="counter"class="counter">{cardCounter + 1}/8</p>
             <h1 class="title-mini">{question}</h1>
             <h3 class="answer">{answer}</h3>
             {isAnswered ? (
-              <img
+              <img ata-identifier="arrow"
                 class="turn"
                 src={turn}
                 onClick={() => TryReact()}
@@ -61,16 +61,16 @@ export default function Card(props) {
             ) : (
               <div class="buttons">
                 <button class="black" onClick={() => ChangeStyle("Black")}>
-                  "Aprendi agora"
+                  Aprendi agora
                 </button>
                 <button class="red" onClick={() => ChangeStyle("Red")}>
-                  "Não lembrei"
+                 Não lembrei
                 </button>
                 <button class="green" onClick={() => ChangeStyle("Green")}>
-                  "Lembrei com esforço"
+                  Lembrei com esforço
                 </button>
                 <button class="yellow" onClick={() => ChangeStyle("Yellow")}>
-                  <strong>"Zap!"</strong>
+                  <strong>Zap!</strong>
                 </button>
               </div>
             )}
