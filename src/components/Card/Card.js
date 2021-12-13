@@ -1,13 +1,18 @@
 import "./style.css";
 import turn from "../../assets/turn.png";
 import { useState } from "react";
-import { text, buttonOption } from "../Card/CardContent";
+import { text } from "../Card/CardContent";
 
 export default function Card(props) {
   const [isFront, setFrontCard] = useState(true);
   const [cardCounter, setCard] = useState(0);
   const { question, answer } = text[cardCounter];
-  const { button1, button2, button3, button4} = buttonOption;
+  const [style, setStyle] = useState("back-card")
+
+  const ChangeStyleBlack =() => {setStyle("borderColorBlack");}
+  const ChangeStyleRed =() => {setStyle("borderColorRed");}
+  const ChangeStyleGreen =() => {setStyle("borderColorGreen");}
+  const ChangeStyleYellow =() => {setStyle("borderColorYellow");}
 
   function TryReact() {
     setCard(cardCounter + 1);
@@ -17,27 +22,30 @@ export default function Card(props) {
   function Flip() {
     setFrontCard(false);
   }
-
+ 
+ 
   return (
-    <>
-      {isFront ? false : true}
-      <div class="front-card hide">
+    <>        {
+      isFront ? 
+      <div class="front-card">
         <p class="counter">{cardCounter + 1}/8</p>
         <h1 class="title">{question}</h1>
         <img class="turn" src={turn} onClick={() => Flip()} alt="turn" />
       </div>
-      {isFront ? true : false}
+        : 
+      <div className={style}>
       <div class="back-card">
         <p class="counter">{cardCounter +1}/8</p>
         <h1 class="title-mini">{question}</h1>
         <h3 class="answer">{answer}</h3>
         <div class="buttons">
-        <button class="black">{button1}</button>
-        <button class="red">{button2}</button>
-        <button class="green">{button3}</button>
-        <button class="yellow">{button4}</button>
+        <button class="black" onClick={() => ChangeStyleBlack()}>"Aprendi agora"</button>
+        <button class="red" onClick={() => ChangeStyleRed()}>"Não lembrei"</button>
+        <button class="green" onClick={() => ChangeStyleGreen()}>"Lembrei com esforço"</button>
+        <button class="yellow" onClick={() => ChangeStyleYellow()}><strong>"Zap!"</strong></button>
         </div>
-      </div>
+        </div>
+      </div>}
     </>
   );
 }
