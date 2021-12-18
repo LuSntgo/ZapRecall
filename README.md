@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/logo.png" height = "150" alt="" />
+ <a href="https://zap-recall-react-rho.vercel.app/" target="_blank"> <img src="src/assets/logo.png" height = "150" alt="" />
 </p>
 
 # Descrição
